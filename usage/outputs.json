@@ -1,0 +1,9 @@
+{
+  "base_dir": "Results",
+  "date_dir": "20240118",
+  "run_dir": "1250",
+  "plots_dir": "plots",
+  "model_dir": "models",
+  "checkpoints_dir": "checkpoints",
+  "simulation_save_file": "simulation1.json"
+}

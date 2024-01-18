@@ -1,0 +1,9 @@
+{
+  "flowsheet_path": "dataset/simple_cstr.bkp",
+  "samples_file": "dataset/samples.npz",
+  "streams": ["FEED", "PROD"],
+  "in_streams": ["FEED"],
+  "out_streams": ["PROD"],
+  "all_components": ["ETHANOL", "AC-AC", "ETH-ACET", "WATER"],
+  "all_blocks": ["CSTR1"]
+}

@@ -1,0 +1,6 @@
+{
+  "inputs": "usage/inputs.json",
+  "outputs": "usage/outputs.json",
+  "configs": "usage/config.json",
+  "attributes": "usage/attributes.json"
+}
