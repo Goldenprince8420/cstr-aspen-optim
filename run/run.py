@@ -58,7 +58,7 @@ class Runner:
         self.simulator = StreamDataSimulatorAspenNewCSTR(engine=self.system.aspen,
                                                          generator=self.generator,
                                                          attributes_dict=self.attributes_dict,
-                                                         num_points=int(self.config["num_points"]))
+                                                         config=self.config)
 
     def _run_simulator(self):
         self.simulator.simulate(all_streams_list=self.input_config["streams"],

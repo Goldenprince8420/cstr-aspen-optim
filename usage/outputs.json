@@ -5,5 +5,5 @@
   "plots_dir": "plots",
   "model_dir": "models",
   "checkpoints_dir": "checkpoints",
-  "simulation_save_file": "simulation1.json"
+  "simulation_save_file": "simulation2.json"
 }

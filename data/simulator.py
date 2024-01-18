@@ -9,11 +9,12 @@ class StreamDataSimulatorAspenNewCSTR:
                  engine,
                  generator,
                  attributes_dict,
-                 num_points):
+                 config):
         self.engine = engine
         self.attributes = attributes_dict
         self.generator = generator
-        self.num_points = num_points
+        self.config = config
+        self.num_points = int(self.config["num_points"])
         self.all_streams = None
         self.all_in_streams = None
         self.all_out_streams = None
@@ -59,9 +60,8 @@ class StreamDataSimulatorAspenNewCSTR:
     def _sample_points(self):
         # Generate a Sobol sequence for n_variables
         # points = sobol_seq.i4_sobol_generate(self.n_features, self.num_points)
-        points = np.random.rand(self.num_points, self.n_features)
-        print(points.shape)
-
+        points = self.config["sampling_mean"] + self.config["sampling_sd"] * np.random.randn(self.num_points,
+                                                                                             self.n_features)
         # Initialize an empty array to store the samples
         self.samples = np.zeros((self.num_points, self.n_features))
 

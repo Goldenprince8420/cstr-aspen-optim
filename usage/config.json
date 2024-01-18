@@ -1,3 +1,5 @@
 {
-  "num_points": 5e2
+  "num_points": 5e2,
+  "sampling_mean": 0,
+  "sampling_sd": 1
 }
