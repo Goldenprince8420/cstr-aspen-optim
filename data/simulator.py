@@ -60,8 +60,11 @@ class StreamDataSimulatorAspenNewCSTR:
     def _sample_points(self):
         # Generate a Sobol sequence for n_variables
         # points = sobol_seq.i4_sobol_generate(self.n_features, self.num_points)
-        points = self.config["sampling_mean"] + self.config["sampling_sd"] * np.random.randn(self.num_points,
-                                                                                             self.n_features)
+        # points = self.config["sampling_mean"] + self.config["sampling_sd"] * np.random.randn(self.num_points,
+        #                                                                                      self.n_features)
+        points = np.random.rand(self.num_points,
+                                self.n_features)
+
         # Initialize an empty array to store the samples
         self.samples = np.zeros((self.num_points, self.n_features))
 
